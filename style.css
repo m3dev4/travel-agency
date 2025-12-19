@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,8 +28,13 @@ section {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: inherit;
+  align-items: center;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #000 transparent;
+  backdrop-filter: blur(10px) brightness(1.1);
 }
 
 .logo {
@@ -48,7 +54,6 @@ header {
 ul {
   display: flex;
   justify-content: center;
-
   width: 40%;
   list-style: none;
 }
@@ -144,7 +149,7 @@ ul li a:hover {
 
 .right {
   margin-left: 100px;
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,8 +274,6 @@ ul li a:hover {
   width: 60%;
   font-size: 14px;
 }
-
-
 
 .destinations .gallerie {
   display: flex;
